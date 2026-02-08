@@ -1,5 +1,6 @@
 // Year
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Reveal cards on scroll
 const observer = new IntersectionObserver(
@@ -13,21 +14,31 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".card").forEach((card) => observer.observe(card));
 
-// Optional: subtle terminal "typing" feel (no fast spam)
-(function terminalTyping() {
-  const el = document.getElementById("term");
-  if (!el) return;
+// Filters (projects.html)
+const chips = document.querySelectorAll(".chip");
+const projects = document.querySelectorAll(".project");
 
-  const full = el.textContent;
-  el.textContent = "";
-  let i = 0;
-
-  const step = () => {
-    i += Math.floor(Math.random() * 3) + 1;
-    el.textContent = full.slice(0, i);
-    if (i < full.length) requestAnimationFrame(step);
+if (chips.length && projects.length) {
+  const setActive = (btn) => {
+    chips.forEach((c) => c.classList.remove("active"));
+    btn.classList.add("active");
   };
 
-  // Delay so layout loads first
-  setTimeout(step, 250);
-})();
+  const applyFilter = (tag) => {
+    projects.forEach((p) => {
+      const tags = (p.getAttribute("data-tags") || "").split(" ");
+      const visible = tag === "all" || tags.includes(tag);
+      p.classList.toggle("hidden", !visible);
+    });
+  };
+
+  chips.forEach((chip) => {
+    chip.addEventListener("click", () => {
+      const tag = chip.getAttribute("data-filter");
+      setActive(chip);
+      applyFilter(tag);
+    });
+  });
+
+  applyFilter("all");
+}

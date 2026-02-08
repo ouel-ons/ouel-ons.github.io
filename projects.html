@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | ouelnyx</title>
+  <meta name="description" content="Security labs and systems projects — structured portfolio by ouelnyx." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+  </div>
+
+  <header class="wrap">
+    <nav class="nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <a class="brandlink" href="index.html">ouelnyx</a>
+      </div>
+      <div class="links">
+        <a href="projects.html" class="active">Projects</a>
+        <a href="index.html#certs">Certs</a>
+        <a href="index.html#contact" class="pill">Contact</a>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <p class="kicker">Portfolio</p>
+      <h1>Projects</h1>
+      <p class="subtitle">
+        A structured set of labs and systems projects focused on <strong>OS</strong>, <strong>memory</strong>,
+        <strong>networking</strong>, and <strong>security engineering</strong>.
+      </p>
+
+      <div class="badges">
+        <span class="badge">Clean structure</span>
+        <span class="badge">Ethical labs only</span>
+        <span class="badge">Systems-first</span>
+        <span class="badge">Security-driven</span>
+      </div>
+    </section>
+  </header>
+
+  <main class="wrap">
+    <!-- Quick links -->
+    <section class="section">
+      <div class="cards">
+        <a class="card link show" href="https://github.com/ouelnyx/42-cursus" target="_blank" rel="noreferrer">
+          <div class="card-title">42-cursus</div>
+          <div class="card-sub">42 (1337) Common Core · C / Unix / Systems</div>
+          <div class="pillrow">
+            <span class="pill">C</span><span class="pill">Unix</span><span class="pill">Concurrency</span><span class="pill">Networking</span>
+          </div>
+          <div class="card-foot">→ Open repo</div>
+        </a>
+
+        <a class="card link show" href="https://github.com/ouelnyx/security-labs" target="_blank" rel="noreferrer">
+          <div class="card-title">security-labs</div>
+          <div class="card-sub">Hands-on labs · OS / Memory / Network security</div>
+          <div class="pillrow">
+            <span class="pill">Labs</span><span class="pill">Ethical</span><span class="pill">Tooling</span><span class="pill">Writeups</span>
+          </div>
+          <div class="card-foot">→ Open repo</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Security Labs — Categories</h2>
+        <p>Filter by area. Everything here is designed for controlled environments and learning.</p>
+      </div>
+
+      <div class="filters" role="toolbar" aria-label="Project filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="systems">Systems</button>
+        <button class="chip" data-filter="networks">Networks</button>
+        <button class="chip" data-filter="seceng">Security Eng</button>
+        <button class="chip" data-filter="exploitation">Exploitation</button>
+        <button class="chip" data-filter="defense">Defense</button>
+        <button class="chip" data-filter="pentest">Pentest</button>
+        <button class="chip" data-filter="research">Research</button>
+        <button class="chip" data-filter="tools">Tools</button>
+        <button class="chip" data-filter="writeups">CTF Writeups</button>
+      </div>
+
+      <!-- Cards -->
+      <div class="project-grid">
+        <!-- 01-systems -->
+        <a class="card link project show" data-tags="systems" href="https://github.com/ouelnyx/security-labs/tree/main/01-systems" target="_blank" rel="noreferrer">
+          <div class="card-title">01-systems</div>
+          <div class="card-sub">Process, memory, syscalls, tracing, OS behavior labs.</div>
+          <div class="pillrow">
+            <span class="pill">Linux</span><span class="pill">POSIX</span><span class="pill">GDB</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 02-networks -->
+        <a class="card link project show" data-tags="networks" href="https://github.com/ouelnyx/security-labs/tree/main/02-networks" target="_blank" rel="noreferrer">
+          <div class="card-title">02-networks</div>
+          <div class="card-sub">TCP/IP, sockets, packet inspection, protocol experiments.</div>
+          <div class="pillrow">
+            <span class="pill">TCP/IP</span><span class="pill">Wireshark</span><span class="pill">Nmap</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 03-security-engineering -->
+        <a class="card link project show" data-tags="seceng" href="https://github.com/ouelnyx/security-labs/tree/main/03-security-engineering" target="_blank" rel="noreferrer">
+          <div class="card-title">03-security-engineering</div>
+          <div class="card-sub">Attack surfaces, threat modeling, secure design prototypes.</div>
+          <div class="pillrow">
+            <span class="pill">Threat model</span><span class="pill">Audit</span><span class="pill">Design</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 04-exploitation -->
+        <a class="card link project show" data-tags="exploitation" href="https://github.com/ouelnyx/security-labs/tree/main/04-exploitation" target="_blank" rel="noreferrer">
+          <div class="card-title">04-exploitation</div>
+          <div class="card-sub">Stack/heap labs, ROP basics, controlled exploitation.</div>
+          <div class="pillrow">
+            <span class="pill">Pwn</span><span class="pill">ROP</span><span class="pill">Memory</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 05-defensive-security -->
+        <a class="card link project show" data-tags="defense" href="https://github.com/ouelnyx/security-labs/tree/main/05-defensive-security" target="_blank" rel="noreferrer">
+          <div class="card-title">05-defensive-security</div>
+          <div class="card-sub">Logging, detection, monitoring, basic IDS experiments.</div>
+          <div class="pillrow">
+            <span class="pill">Logs</span><span class="pill">Monitoring</span><span class="pill">Detection</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 06-pentest-labs -->
+        <a class="card link project show" data-tags="pentest" href="https://github.com/ouelnyx/security-labs/tree/main/06-pentest-labs" target="_blank" rel="noreferrer">
+          <div class="card-title">06-pentest-labs</div>
+          <div class="card-sub">End-to-end practice labs + reporting methodology.</div>
+          <div class="pillrow">
+            <span class="pill">Methodology</span><span class="pill">Reporting</span><span class="pill">Lab</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 07-research -->
+        <a class="card link project show" data-tags="research" href="https://github.com/ouelnyx/security-labs/tree/main/07-research" target="_blank" rel="noreferrer">
+          <div class="card-title">07-research</div>
+          <div class="card-sub">Fuzzing, side-channels, emerging research topics.</div>
+          <div class="pillrow">
+            <span class="pill">Fuzzing</span><span class="pill">Research</span><span class="pill">Notes</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 08-tools -->
+        <a class="card link project show" data-tags="tools" href="https://github.com/ouelnyx/security-labs/tree/main/08-tools" target="_blank" rel="noreferrer">
+          <div class="card-title">08-tools</div>
+          <div class="card-sub">Small analysis tools built during labs (supporting utilities).</div>
+          <div class="pillrow">
+            <span class="pill">Tooling</span><span class="pill">Automation</span><span class="pill">CLI</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+
+        <!-- 09-ctf-writeups -->
+        <a class="card link project show" data-tags="writeups" href="https://github.com/ouelnyx/security-labs/tree/main/09-ctf-writeups" target="_blank" rel="noreferrer">
+          <div class="card-title">09-ctf-writeups</div>
+          <div class="card-sub">Public writeups and learning notes from CTF practice.</div>
+          <div class="pillrow">
+            <span class="pill">CTF</span><span class="pill">Writeups</span><span class="pill">Learning</span>
+          </div>
+          <div class="card-foot">→ Open folder</div>
+        </a>
+      </div>
+
+      <div class="legal">
+        <strong>Ethics:</strong> All work is educational and performed only on self-owned systems,
+        intentionally vulnerable labs, or public CTF challenges.
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">©</span> <span id="year"></span> <span class="muted">ouelnyx</span>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
