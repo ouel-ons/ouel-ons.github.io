@@ -4,63 +4,250 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ouail El Onsri | ouelnyx</title>
-  <link rel="stylesheet" href="assests/style.css" />
+  <meta name="description" content="Systems-oriented software engineering student @ 1337 (42 Network). Low-level programming, Linux internals, cybersecurity & penetration testing." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
+
 <body>
+  <!-- Ambient background -->
+  <div class="bg">
+    <div class="grid"></div>
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+  </div>
 
-  <main>
-    <h1>ouelnyx</h1>
-    <p class="subtitle">
-      Software Engineering · Systems · Cybersecurity
-    </p>
+  <header class="wrap">
+    <nav class="nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span class="name">ouelnyx</span>
+      </div>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#labs">Security Labs</a>
+        <a href="#certs">Certs</a>
+        <a href="#contact" class="pill">Contact</a>
+      </div>
+    </nav>
 
-    <section>
-      <h2>About</h2>
-      <p>
-        I’m Ouail El Onsri, a Software Engineering student at
-        <strong>1337 (42 Network)</strong>.
-        I focus on low-level software engineering, Linux systems,
-        and cybersecurity.
-      </p>
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker">Systems · Security · Low-level Engineering</p>
+
+        <h1>
+          <span class="muted">Hi, I’m</span> Ouail El Onsri
+          <span class="handle">(ouelnyx)</span>
+        </h1>
+
+        <p class="subtitle">
+          Software Engineering student @ <strong>1337 (42 Network)</strong>.  
+          Building strong foundations in <strong>C / Unix / Linux</strong>, while training independently in
+          <strong>cybersecurity & penetration testing</strong>.
+        </p>
+
+        <div class="badges">
+          <span class="badge">42 · 1337</span>
+          <span class="badge">Linux Internals</span>
+          <span class="badge">C Systems</span>
+          <span class="badge">Security Labs</span>
+          <span class="badge">CTFs</span>
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects">View work</a>
+          <a class="btn" href="https://github.com/ouelnyx" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="#certs">Cert roadmap</a>
+        </div>
+
+        <div class="mini">
+          <div class="mini-item">
+            <div class="mini-label">Location</div>
+            <div class="mini-value">Morocco · open to Germany/EU</div>
+          </div>
+          <div class="mini-item">
+            <div class="mini-label">Focus</div>
+            <div class="mini-value">OS · Memory · Networking · Security</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="terminal card">
+          <div class="terminal-top">
+            <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+            <span class="terminal-title">~/ouelnyx</span>
+          </div>
+          <pre class="terminal-body"><code id="term">
+$ whoami
+ouelnyx
+
+$ focus
+low-level C · linux · cybersecurity
+
+$ now
+1337 (42) student
+pentesting training (self-directed)
+Network+ · Security+ · eJPT (OSCP long-term)
+
+$ repos
+- 42-cursus
+- security-labs
+</code></pre>
+        </div>
+
+        <div class="skills card">
+          <div class="card-title">Core Skills</div>
+          <div class="icons">
+            <img alt="C" title="C" src="https://skillicons.dev/icons?i=c&theme=dark" />
+            <img alt="Python" title="Python" src="https://skillicons.dev/icons?i=python&theme=dark" />
+            <img alt="Bash" title="Bash" src="https://skillicons.dev/icons?i=bash&theme=dark" />
+            <img alt="Linux" title="Linux" src="https://skillicons.dev/icons?i=linux&theme=dark" />
+            <img alt="Git" title="Git" src="https://skillicons.dev/icons?i=git&theme=dark" />
+            <img alt="CPP" title="C++" src="https://skillicons.dev/icons?i=cpp&theme=dark" />
+          </div>
+
+          <div class="tiny">
+            Tools (labs): GDB · Valgrind · Wireshark · Nmap · Burp Suite · Metasploit
+          </div>
+        </div>
+      </div>
     </section>
+  </header>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/ouelnyx/42-cursus" target="_blank">
-            42-cursus
-          </a>
-          — Common Core systems programming projects
-        </li>
-        <li>
-          <a href="https://github.com/ouelnyx/security-labs" target="_blank">
-            security-labs
-          </a>
-          — Personal cybersecurity & systems laboratories
-        </li>
-      </ul>
-    </section>
+  <main class="wrap">
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Clean, structured repos designed to show progression from <strong>systems</strong> → <strong>security</strong>.</p>
+      </div>
 
-    <section>
-      <h2>Focus</h2>
-      <ul>
-        <li>Low-level programming in C</li>
-        <li>Linux internals & networking</li>
-        <li>Security & penetration testing</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:ouailelonsri@gmail.com">
-          ouailelonsri@gmail.com
+      <div class="cards">
+        <a class="card link" href="https://github.com/ouelnyx/42-cursus" target="_blank" rel="noreferrer">
+          <div class="card-title">42-cursus</div>
+          <div class="card-sub">42 (1337) Common Core · C / Unix / Systems</div>
+          <div class="pillrow">
+            <span class="pill">libft</span><span class="pill">minishell</span><span class="pill">philosophers</span><span class="pill">netpractice</span>
+          </div>
+          <div class="card-foot">→ View repository</div>
         </a>
-      </p>
+
+        <a class="card link" href="https://github.com/ouelnyx/security-labs" target="_blank" rel="noreferrer" id="labs">
+          <div class="card-title">security-labs</div>
+          <div class="card-sub">Personal labs · OS / Memory / Network security</div>
+          <div class="pillrow">
+            <span class="pill">systems</span><span class="pill">networks</span><span class="pill">exploitation</span><span class="pill">defense</span>
+          </div>
+          <div class="card-foot">→ View repository</div>
+        </a>
+      </div>
     </section>
+
+    <!-- Repo structure -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Repository Structure</h2>
+        <p>Designed to be readable for recruiters and technical reviewers.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <div class="card-title">42-cursus layout</div>
+          <pre class="tree"><code>42-cursus/
+├── common-core/
+│   ├── libft/  get_next_line/  ft_printf/  ...
+│   └── minishell/ philosophers/ netpractice/ cub3d/
+├── advanced-systems/
+│   ├── memory-allocator/  thread-pool-server/
+│   └── process-monitor/   network-scanner/   mini-db-engine/
+├── security-oriented/
+│   ├── vuln-lab/  binary-explorer/  ptrace-debugger/
+│   └── sec-os-lab/ crackme-generator/
+└── docs/
+    ├── cursus-map.md
+    ├── skills-matrix.md
+    └── project-notes.md</code></pre>
+          <div class="tiny">Each project has its own README explaining goals, constraints, and what I learned.</div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">security-labs layout</div>
+          <pre class="tree"><code>security-labs/
+├── 01-systems/
+├── 02-networks/
+├── 03-security-engineering/
+├── 04-exploitation/
+├── 05-defensive-security/
+├── 06-pentest-labs/
+├── 07-research/
+├── 08-tools/
+└── 09-ctf-writeups/</code></pre>
+          <div class="tiny">All work is educational and performed only in controlled environments / CTFs.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification -->
+    <section id="certs" class="section">
+      <div class="section-head">
+        <h2>Certifications</h2>
+        <p>Mix of completed certificates + an industry-focused roadmap.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <div class="card-title">Completed</div>
+          <ul class="list">
+            <li><span class="check">✓</span> Google IT Support Professional</li>
+            <li><span class="check">✓</span> Google Cybersecurity Professional</li>
+            <li><span class="check">✓</span> IBM Full-Stack Software Developer</li>
+            <li><span class="check">✓</span> Meta Front-End Developer</li>
+            <li><span class="check">✓</span> Meta Back-End Developer</li>
+            <li><span class="check">✓</span> freeCodeCamp certifications</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Roadmap (in progress)</div>
+          <ul class="list">
+            <li><span class="dotblue"></span> Network+</li>
+            <li><span class="dotblue"></span> Security+</li>
+            <li><span class="dotblue"></span> eJPT</li>
+            <li><span class="dotblue"></span> CEH</li>
+            <li><span class="dotblue"></span> OSCP <span class="tiny muted">(long-term)</span></li>
+          </ul>
+          <div class="tiny">Focused on fundamentals first (networking, OS, security engineering), then hands-on certs.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Open to internships / junior opportunities (Germany/EU) and technical collaboration.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-title">Email</div>
+          <p class="mono"><a href="mailto:ouailelonsri@gmail.com">ouailelonsri@gmail.com</a></p>
+          <div class="tiny">If you want a PDF CV link here later, I’ll wire it in cleanly.</div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">GitHub</div>
+          <p class="mono"><a href="https://github.com/ouelnyx" target="_blank" rel="noreferrer">github.com/ouelnyx</a></p>
+          <div class="tiny">Pinned: 42-cursus · security-labs · portfolio site</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">©</span> <span id="year"></span> <span class="muted">ouelnyx</span>
+    </footer>
   </main>
 
+  <script src="assets/app.js"></script>
 </body>
 </html>
